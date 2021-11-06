@@ -1,0 +1,8 @@
+@startuml Pokemons
+Pokemon <|-- Tynamo
+Pokemon <|-- Passimian
+Pokemon <|-- Teddiursa
+Teddiursa <|-- Ursaring
+Tynamo <|-- Eelektrik
+Eelektrik <|-- Eelektross
+@enduml

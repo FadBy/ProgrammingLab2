@@ -1,0 +1,29 @@
+@startuml Moves
+StatusMove <|-- Agility
+StatusMove <|-- Charm
+StatusMove <|-- Confide
+StatusMove <|-- DoubleTeam
+StatusMove <|-- Harden
+StatusMove <|-- Leer
+SpecialMove <|-- Psychic
+PhysicalMove <|-- RockSlide
+StatusMove <|-- Swagger
+' Agility : @Override void applySelfEffects(Pokemon p)
+' Agility : @Override String describe()
+' Charm : @Override void applyOppEffects(Pokemon p)
+' Charm : @Override String describe()
+' Confide : @Override void applyOppEffects(Pokemon p)
+' Confide : @Override String describe()
+' DoubleTeam : @Override void applySelfEffects(Pokemon p)
+' DoubleTeam : @Override String describe()
+' Harden : @Override void applySelfEffects(Pokemon p)
+' Harden : @Override String describe()
+' Leer : @Override void applyOppEffects(Pokemon p)
+' Leer : @Override String describe()
+' Psychic : @Override void applyOppEffects(Pokemon p)
+' Psychic : @Override String describe()
+' RockSlide : @Override void applyOppEffects(Pokemon p)
+' RockSlide : @Override String describe()
+' Swagger : @Override void applyOppEffects(Pokemon p)
+' Swagger : @Override String describe()
+@enduml

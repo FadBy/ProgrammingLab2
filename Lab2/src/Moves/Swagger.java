@@ -1,18 +1,21 @@
+package Moves;
+
 import ru.ifmo.se.pokemon.Effect;
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Stat;
 import ru.ifmo.se.pokemon.StatusMove;
 import ru.ifmo.se.pokemon.Type;
 
-public class Swagger extends StatusMove{
+public class Swagger extends StatusMove {
 
-    public Swagger(){
+    public Swagger() {
         super(Type.NORMAL, 0, 90);
     }
 
     @Override
-    protected void applyOppEffects(Pokemon p){
-        p.addEffect(new Effect().stat(Stat.ATTACK, 2));
+    protected void applyOppEffects(Pokemon p) {
+        Effect effect = new Effect(); 
+        p.addEffect(effect.stat(Stat.ATTACK, 2));
         p.confuse();
     }
 

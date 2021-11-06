@@ -1,18 +1,21 @@
+package Moves;
+
 import ru.ifmo.se.pokemon.Effect;
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Stat;
 import ru.ifmo.se.pokemon.StatusMove;
 import ru.ifmo.se.pokemon.Type;
 
-public class Charm extends StatusMove{
+public class Charm extends StatusMove {
 
-    public Charm(){
+    public Charm() {
         super(Type.FAIRY, 0, 100);
     }
 
     @Override
-    protected void applyOppEffects(Pokemon p){
-        p.addEffect(new Effect().stat(Stat.ATTACK, -2));
+    protected void applyOppEffects(Pokemon p) {
+        Effect effect = new Effect(); 
+        p.addEffect(effect.stat(Stat.ATTACK, -2));
     }
 
     @Override
